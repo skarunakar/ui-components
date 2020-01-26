@@ -79,11 +79,7 @@ const SelectedItem = styled(Item)`
   div:last-child {
     margin-left: auto;
   }
-    ${props =>
-    props.disabled &&
-    `
-    background-color: ${props.theme.colors.gray50};
-  `};
+  ${props => props.disabled && `background-color: ${props.theme.colors.gray50};`};
 `;
 
 const SelectedItemIcon = styled.span`
